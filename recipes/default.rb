@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "libarchive"
+include_recipe "libarchive::default" 
 include_recipe "df_java::default"
 
 directory "/usr/local/eclipse" do 

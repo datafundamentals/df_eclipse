@@ -1,7 +1,10 @@
 ---
 driver:
-  name: vagrant
-  customize: 
+  network:
+  - ["private_network", {ip: "192.168.33.47"}]
+  customize:
+    memory: 4096
+  synced_folders: [["/vagrant/binaries", "/vagrant/binaries"]]
   name: vagrant
 
 provisioner:
@@ -13,5 +16,6 @@ platforms:
 
 suites:
   - name: default
-    run_list: 
+    run_list:
+      - recipe[df_eclipse::default]
     attributes:
