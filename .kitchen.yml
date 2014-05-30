@@ -1,9 +1,8 @@
 ---
 driver:
   name: vagrant
-  customize:
-   memory: 4096
-  - synced_folders: [["/vagrant/binaries", "/vagrant/binaries"]]
+  customize: 
+  name: vagrant
 
 provisioner:
   name: chef_solo
@@ -14,5 +13,5 @@ platforms:
 
 suites:
   - name: default
-    run_list:
+    run_list: 
     attributes:
