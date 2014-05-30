@@ -7,7 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "df_java::default"
 
 
 execute "tar -xzvf /vagrant/binaries/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz -C /opt" do
