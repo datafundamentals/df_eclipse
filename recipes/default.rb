@@ -8,8 +8,8 @@
 #
 
 
-
-execute "tar -xzvf /vagrant/binaries/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz -C /opt" do
+                                     
+execute "tar -xzvf /vagrant/binaries/eclipse-jee-luna-SR1a-linux-gtk-x86_64.tar.gz -C /opt" do
 	user "root"
 	action :run
 	end
